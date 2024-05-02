@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.mainArea {
+	max-height: 624px;
+	max-width: fit-content;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 180px;
+}
+.Sidebar {
+	position: fixed;
+	height: 100%;
+	width: 160px;
+	background-color: #355c7d;
+	margin: 0;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+}
+.Sidebar > button {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 18px;
+	gap: 8px;
+
+	position: relative;
+	width: 150px;
+	height: 52px;
+	left: 2px;
+	top: 100px;
+
+	background: #c06c84;
+	border-radius: 999px;
+	border-style: solid;
+	border: 0;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	color: #fff;
+}
+main {
+	background-color: #fff;
+	font-family: "Montserrat", sans-serif;
+}
+nav {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	height: 100px;
+}
+nav > h1 {
+	position: relative;
+	font-weight: 300;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+}
+.NewTask {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	border-radius: 2%;
+	height: 350px;
+	width: 350px;
+	background: #6c5b7b;
+}
+.NewTask > form > label {
+	color: #fff;
+}
+.NewTask > h1 {
+	margin-top: 32px;
+	color: #fff;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+}
+.newTaskTitle > label {
+	margin-left: 33px;
+	color: #fff;
+	font-family: "Roboto", Times;
+	font-weight: 400;
+}
+.newTaskWork {
+	color: #fff;
+	margin-left: 60px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+.newTaskPersonal {
+	color: #fff;
+	margin-left: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+.newTaskCreateBtn {
+	border-radius: 20px;
+	margin-left: 58px;
+	width: 100px;
+	height: 40px;
+	background-color: #f67280;
+	border: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+.newTaskCancelBtn {
+	border-radius: 20px;
+	margin-left: 46px;
+	width: 100px;
+	height: 40px;
+	border: 0;
+	background-color: #c06c84;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+.newTaskCheckboxes {
+	margin-top: 45px;
+	margin-bottom: 56px;
+	display: flex;
+	flex-direction: row;
+}
+.newTaskDueDate {
+	color: #fff;
+	display: flex;
+	margin-left: 19px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+.newTaskTitle > input {
+	width: 193px;
+	height: 23px;
+	border: 0;
+	margin-left: 7.5px;
+	border-radius: 5px;
+}
+.newTaskDueDate > input {
+	width: 193px;
+	height: 23px;
+	border: 0;
+	margin-left: 7.5px;
+	border-radius: 5px;
+}
+.newTaskTitle > input:focus {
+	outline-style: none;
+}
+.newTaskDueDate > input {
+	outline-style: none;
+}
+.Task {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	margin-top: 11px;
+	z-index: 0;
+	width: 214px;
+	height: 67px;
+	background-color: #f8b195;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+.Task > h4 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	color: #fff;
+	font-size: 25px;
+}
+.TaskInfo {
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	width: 350px;
+	background-color: #6c5b7b;
+	z-index: 1;
+	border-radius: 2%;
+}
+.TaskInfo > h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	text-align: center;
+	color: #fff;
+}
+.TaskInfoBtns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+.TaskInfoBtns > button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+}
+.TaskInfoDeleteBtn {
+	background-color: #c06c84;
+	border: 0;
+}
+.TaskInfoCloseBtn {
+	background-color: #f67280;
+	border: 0;
+}
+.TaskInfoDueDate,
+.TaskInfoTaskType {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.TaskInfoHeaders {
+	margin-top: 10px;
+}
+.TaskInfoDueDate > h3,
+.TaskInfoTaskType > h3 {
+	color: #fff;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
